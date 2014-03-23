@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<polycode>	
+	<materials>
+		<material name="paintmat">
+			<shader name="paintshader">
+			</shader>
+		</material>	
+	</materials>
+	
+	<shaders>
+		<shader type="glsl" name="paintshader">
+			<vp source="Resources/paint.vert">
+				<params>
+				</params>
+			</vp>
+			<gp source="Resources/paint.geom">
+				<params>
+				</params>
+			</gp>
+			<fp source="Resources/paint.frag">
+				<params>
+				</params>
+			</fp>
+		</shader>
+	</shaders>
+</polycode>

@@ -8,8 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#import <Cocoa/Cocoa.h>
+#import "PolycodeView.h"
+#import "GLPaintApp.h"
+
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+@private
+	NSWindow *window;
+    PolycodeView *mainView;
+    GLPaintApp *app;
+    NSTimer *timer;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet PolycodeView *mainView;
 
 @end
